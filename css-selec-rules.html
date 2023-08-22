@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
     <title>Sandbox up till Flexbox</title>
 </head>
 </html>
 	<body>
-	<h1>Sandbox The Odin Project Up Till Flex Box</h1>
+	<h1>CSS Selectors, Usage & and Basic Properties</h1>
 
 	<h2>Selectors:</h2>
 
@@ -230,7 +230,45 @@
 </ul>
 
 	<h3>Image height and width</h3>
-	
+	<p>It's is best practice to inlcude both width and height for images as doing so reserves space when loading the page; otherwise the page will "shift" as the image is being loaded.</p>
+	<p>if you want the image to scale properly set the height to auto and choose the width of your content.</p>
+	<pre>
+		img {
+			width: 100px;
+			height: auto;
+		}
+	</pre>
+
+	<h2>Adding CSS to HTML</h2>
+	<p>There are three ways to add CSS to HTML:</p>
+
+	<ul>
+		<li>Inline CSS</li>
+		<li>Internal CSS</li>
+		<li>External CSS</li>
+	</ul>
+
+	<h3>Inline CSS</h3>
+	<p>Inline CSS is used to style a single element. It is added to the element as an attribute. It is not recommended to use inline CSS.</p>
+	<pre>
+		&ltdiv style="color: red;"&gtContent&lt/div&gt	
+	</pre>
+
+	<h3>Internal CSS</h3>
+	<p>Internal CSS is used to style a single page. It is added to the head element of the page.</p>
+	<pre>
+		&ltstyle&gt
+			div {
+				color: red;
+			}
+		&lt/style&gt
+	</pre>
+
+	<h3>External CSS</h3>
+	<p>External CSS is used to style multiple pages. It is added to a separate CSS file and linked to the HTML pages.</p>
+	<pre>
+		&ltlink rel="stylesheet" href="styles.css"&gt
+	</pre>
 
 	</body>
 </html>
